@@ -1,0 +1,9 @@
+def fight():
+    print("An enemy approaches")
+    player_input = input("1. Attack 2. Use item 3. Run")
+    if player_input == str("Attack"):
+        print("You attack, dealing 1 damage.")
+    if player_input == str("Use item"):
+        #inventory
+        if player_input == str("Run"):
+            print("You run away. ")
