@@ -1,3 +1,5 @@
+import random
+
 def fight():
     print("An enemy approaches")
     player_input = input("1. Attack 2. Use item 3. Run")
@@ -7,3 +9,7 @@ def fight():
         #inventory
         if player_input == str("Run"):
             print("You run away. ")
+    for x in range(1):
+        damage = random.randint(1, 10)
+        print("The enemy attacks, dealing", damage)
+    input("Press enter to exit")
