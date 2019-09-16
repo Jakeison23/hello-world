@@ -1,0 +1,9 @@
+move = input("Right, Left, Forward or Backwards?")
+if move == str("Right"):
+    print("You move through the door on the right.")
+if move == str("Left"):
+    print("You move through the door on the left.")
+if move == str("Forward"):
+    print("You move through the door in front of you.")
+if move == str("Backwards"):
+    print("You move through the door behind you.")
