@@ -1,1 +1,25 @@
+import random
 
+print("Welcome to Harold's Cheese Cave. Are you ready to delve into the depths of the cave and discover its secrets?")
+player_name = input("What is your name?")
+print("Ah, yes,", player_name, "You seem worthy to enter the cave.")
+
+weapons = {1: "Basic Sword", 2: "Basic Mage Book", 3: "Basic Axe", 4: "Basic Warhammer"}
+
+basicsword = weapons[1]
+basicmage = weapons[2]
+basicaxe = weapons[3]
+basichammer = weapons[4]
+
+weap_select = input("Select a weapon, my friend. 1. Basic Sword 2. Basic Mage Book. 3. Basic Axe. 4. Basic Warhammer")
+
+if weap_select == str("1"):
+    print("You have selected the Basic Sword")
+if weap_select == str("2"):
+    print("You have selected the Basic Mage Book")
+if weap_select == str("3"):
+    print("You have selected the Basic Axe")
+if weap_select == str("4"):
+    print("You have selected the Basic Warhammer.")
+
+input("exit")
