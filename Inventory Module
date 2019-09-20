@@ -1,0 +1,17 @@
+import random
+
+def inventory():
+    print("You open your weathered bag.")
+    myinv = ["Basic Sword", "Advanced Sword", "Expert Mage Book"]
+    myinv_pot = ["Basic Healing Potion", "Basic Mana Potion"]
+    invchoice = input("1. Change Weapon 2. Access Potions")
+    if invchoice == str("Change Weapon"):
+        for item in myinv[0:]:
+            print(item)
+    if invchoice == str("Access Potions"):
+        for item in myinv_pot[0:]:
+            print(item)
+
+inventory()
+
+input("Press Enter to Exit")
