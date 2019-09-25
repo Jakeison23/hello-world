@@ -1,4 +1,19 @@
 import random
+import time
+
+myinv = []
+myinv_pot = []
+
+def inventory():
+    print("You open your weathered bag.")
+    invchoice = input("1. Change Weapon 2. Access Potions")
+    if invchoice == str("Change Weapon"):
+        for item in myinv[0:]:
+            print(item)
+    if invchoice == str("Access Potions"):
+        for item in myinv_pot[0:]:
+            print(item)
+
 
 print("Welcome to Harold's Cheese Cave. Are you ready to delve into the depths of the cave and discover its secrets?")
 player_name = input("What is your name?")
@@ -15,11 +30,29 @@ weap_select = input("Select a weapon, my friend. 1. Basic Sword 2. Basic Mage Bo
 
 if weap_select == str("1"):
     print("You have selected the Basic Sword")
+    myinv.append("Basic Sword")
 if weap_select == str("2"):
     print("You have selected the Basic Mage Book")
+    myinv.append("Basic Mage Book")
 if weap_select == str("3"):
     print("You have selected the Basic Axe")
+    myinv.append("Basic Axe")
 if weap_select == str("4"):
     print("You have selected the Basic Warhammer.")
+    myinv.append("Basic Warhammer")
+
+print(myinv, "added to your inventory.")
+
+he = input("Now that you are armed, are you ready to enter the depths of the cave?")
+if he == str("Yes"):
+    print("You wander down the dark, weathered steps.") #insert image
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print("You arrive in front of a large door. It appears old and ruined. You reach for the large handle, and turn it. You hear a large click, and the door unlocks and swings open.") #insert image
+
 
 input("exit")
