@@ -53,6 +53,22 @@ if he == str("Yes"):
     print(".")
     time.sleep(1)
     print("You arrive in front of a large door. It appears old and ruined. You reach for the large handle, and turn it. You hear a large click, and the door unlocks and swings open.") #insert image
+    time.sleep(1)
+    print("You step through the old, cobweb-ridden doorway and take in your surroundings.")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    choice = input("There is a door on your right, a door on your left, and a door in front of you. What do you do? 1. Left 2. Right 3. Forward")
+    if choice == "Left":
+        print()
+    if choice == "Right":
+        print()
+    if choice == "Forward":
+        print()
 
 
 input("exit")
